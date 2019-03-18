@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <!--Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions-->
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DXVK">
+      <UniqueIdentifier>{89e19726-6f76-48da-bd6b-d07e94afb7c3}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="VKDX">
+      <UniqueIdentifier>{0e3af59b-66ef-4d85-8a91-23cf824bbed1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectVK.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXHeader.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKBuffer.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKBufferView.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKClasses.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdBeginRenderPass.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdBindDescriptorSets.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdBindIndexBuffer.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdBindPipeline.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdBindVertexBuffers.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdDraw.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdDrawIndexed.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdDrawIndexedIndirect.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdDrawIndirect.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdEndRenderPass.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdInterface.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdPipelineBarrier.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdSetScissor.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCmdSetViewport.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCommand.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCommandBuffer.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKCommandPool.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDescriptorPool.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDescriptorSet.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDescriptorSetLayout.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDevice.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDeviceMemory.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDeviceObject.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKDispatchable.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKFence.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKFormat.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKFrameBuffer.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKHeader.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKImage.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKImageView.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKInstance.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKInterface.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKObject.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKPhysicalDevice.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKPipeline.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKPipelineCache.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKPipelineLayout.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKQueryPool.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKQueue.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKQueueFamily.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKRenderPass.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKRenderSubPass.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKResource.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKSampler.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKSemaphore.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKShaderModule.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKSurface.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKSwapChain.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="VKDX\VKUtility.h">
+      <Filter>VKDX</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXObject.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXClasses.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXDevice.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXAdapter.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXBuffer.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXResource.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXTexture.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVK\DXMemory.h">
+      <Filter>DXVK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectVK.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VulkanCore.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VulkanKHR.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VulkanWin32.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKBuffer.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKBufferView.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdBeginRenderPass.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdBindDescriptorSets.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdBindIndexBuffer.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdBindPipeline.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdBindVertexBuffers.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdDraw.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdDrawIndexed.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdDrawIndexedIndirect.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdDrawIndirect.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdEndRenderPass.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdPipelineBarrier.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdSetScissor.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCmdSetViewport.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCommand.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCommandBuffer.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKCommandPool.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDescriptorPool.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDescriptorSet.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDescriptorSetLayout.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDevice.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDeviceMemory.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDeviceObject.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKDispatchable.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKFence.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKFormat.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKFrameBuffer.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKImage.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKImageView.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKInstance.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKObject.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKPhysicalDevice.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKPipeline.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKPipelineCache.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKPipelineLayout.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKQueryPool.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKQueue.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKQueueFamily.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKRenderPass.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKRenderSubPass.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKResource.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKSampler.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKSemaphore.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKShaderModule.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKSurface.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKSwapChain.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="VKDX\VKUtility.cpp">
+      <Filter>VKDX</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXDevice.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXAdapter.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXBuffer.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXResource.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXObject.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXTexture.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVK\DXMemory.cpp">
+      <Filter>DXVK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DirectVK.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource</Filter>
+    </Image>
+    <Image Include="DirectVK.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.md" />
+  </ItemGroup>
+</Project>

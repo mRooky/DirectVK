@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6834AC2-1664-425E-9A53-BADF6BC20158}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DirectVK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.77.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.77.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectVK.h" />
+    <ClInclude Include="DXVK\DXAdapter.h" />
+    <ClInclude Include="DXVK\DXBuffer.h" />
+    <ClInclude Include="DXVK\DXClasses.h" />
+    <ClInclude Include="DXVK\DXDevice.h" />
+    <ClInclude Include="DXVK\DXMemory.h" />
+    <ClInclude Include="DXVK\DXTexture.h" />
+    <ClInclude Include="DXVK\DXHeader.h" />
+    <ClInclude Include="DXVK\DXObject.h" />
+    <ClInclude Include="DXVK\DXResource.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VKDX\VKBuffer.h" />
+    <ClInclude Include="VKDX\VKBufferView.h" />
+    <ClInclude Include="VKDX\VKClasses.h" />
+    <ClInclude Include="VKDX\VKCmdBeginRenderPass.h" />
+    <ClInclude Include="VKDX\VKCmdBindDescriptorSets.h" />
+    <ClInclude Include="VKDX\VKCmdBindIndexBuffer.h" />
+    <ClInclude Include="VKDX\VKCmdBindPipeline.h" />
+    <ClInclude Include="VKDX\VKCmdBindVertexBuffers.h" />
+    <ClInclude Include="VKDX\VKCmdDraw.h" />
+    <ClInclude Include="VKDX\VKCmdDrawIndexed.h" />
+    <ClInclude Include="VKDX\VKCmdDrawIndexedIndirect.h" />
+    <ClInclude Include="VKDX\VKCmdDrawIndirect.h" />
+    <ClInclude Include="VKDX\VKCmdEndRenderPass.h" />
+    <ClInclude Include="VKDX\VKCmdInterface.h" />
+    <ClInclude Include="VKDX\VKCmdPipelineBarrier.h" />
+    <ClInclude Include="VKDX\VKCmdSetScissor.h" />
+    <ClInclude Include="VKDX\VKCmdSetViewport.h" />
+    <ClInclude Include="VKDX\VKCommand.h" />
+    <ClInclude Include="VKDX\VKCommandBuffer.h" />
+    <ClInclude Include="VKDX\VKCommandPool.h" />
+    <ClInclude Include="VKDX\VKDescriptorPool.h" />
+    <ClInclude Include="VKDX\VKDescriptorSet.h" />
+    <ClInclude Include="VKDX\VKDescriptorSetLayout.h" />
+    <ClInclude Include="VKDX\VKDevice.h" />
+    <ClInclude Include="VKDX\VKDeviceMemory.h" />
+    <ClInclude Include="VKDX\VKDeviceObject.h" />
+    <ClInclude Include="VKDX\VKDispatchable.h" />
+    <ClInclude Include="VKDX\VKFence.h" />
+    <ClInclude Include="VKDX\VKFormat.h" />
+    <ClInclude Include="VKDX\VKFrameBuffer.h" />
+    <ClInclude Include="VKDX\VKHeader.h" />
+    <ClInclude Include="VKDX\VKImage.h" />
+    <ClInclude Include="VKDX\VKImageView.h" />
+    <ClInclude Include="VKDX\VKInstance.h" />
+    <ClInclude Include="VKDX\VKInterface.h" />
+    <ClInclude Include="VKDX\VKObject.h" />
+    <ClInclude Include="VKDX\VKPhysicalDevice.h" />
+    <ClInclude Include="VKDX\VKPipeline.h" />
+    <ClInclude Include="VKDX\VKPipelineCache.h" />
+    <ClInclude Include="VKDX\VKPipelineLayout.h" />
+    <ClInclude Include="VKDX\VKQueryPool.h" />
+    <ClInclude Include="VKDX\VKQueue.h" />
+    <ClInclude Include="VKDX\VKQueueFamily.h" />
+    <ClInclude Include="VKDX\VKRenderPass.h" />
+    <ClInclude Include="VKDX\VKRenderSubPass.h" />
+    <ClInclude Include="VKDX\VKResource.h" />
+    <ClInclude Include="VKDX\VKSampler.h" />
+    <ClInclude Include="VKDX\VKSemaphore.h" />
+    <ClInclude Include="VKDX\VKShaderModule.h" />
+    <ClInclude Include="VKDX\VKSurface.h" />
+    <ClInclude Include="VKDX\VKSwapChain.h" />
+    <ClInclude Include="VKDX\VKUtility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectVK.cpp" />
+    <ClCompile Include="DXVK\DXAdapter.cpp" />
+    <ClCompile Include="DXVK\DXBuffer.cpp" />
+    <ClCompile Include="DXVK\DXDevice.cpp" />
+    <ClCompile Include="DXVK\DXMemory.cpp" />
+    <ClCompile Include="DXVK\DXTexture.cpp" />
+    <ClCompile Include="DXVK\DXObject.cpp" />
+    <ClCompile Include="DXVK\DXResource.cpp" />
+    <ClCompile Include="VKDX\VKBuffer.cpp" />
+    <ClCompile Include="VKDX\VKBufferView.cpp" />
+    <ClCompile Include="VKDX\VKCmdBeginRenderPass.cpp" />
+    <ClCompile Include="VKDX\VKCmdBindDescriptorSets.cpp" />
+    <ClCompile Include="VKDX\VKCmdBindIndexBuffer.cpp" />
+    <ClCompile Include="VKDX\VKCmdBindPipeline.cpp" />
+    <ClCompile Include="VKDX\VKCmdBindVertexBuffers.cpp" />
+    <ClCompile Include="VKDX\VKCmdDraw.cpp" />
+    <ClCompile Include="VKDX\VKCmdDrawIndexed.cpp" />
+    <ClCompile Include="VKDX\VKCmdDrawIndexedIndirect.cpp" />
+    <ClCompile Include="VKDX\VKCmdDrawIndirect.cpp" />
+    <ClCompile Include="VKDX\VKCmdEndRenderPass.cpp" />
+    <ClCompile Include="VKDX\VKCmdPipelineBarrier.cpp" />
+    <ClCompile Include="VKDX\VKCmdSetScissor.cpp" />
+    <ClCompile Include="VKDX\VKCmdSetViewport.cpp" />
+    <ClCompile Include="VKDX\VKCommand.cpp" />
+    <ClCompile Include="VKDX\VKCommandBuffer.cpp" />
+    <ClCompile Include="VKDX\VKCommandPool.cpp" />
+    <ClCompile Include="VKDX\VKDescriptorPool.cpp" />
+    <ClCompile Include="VKDX\VKDescriptorSet.cpp" />
+    <ClCompile Include="VKDX\VKDescriptorSetLayout.cpp" />
+    <ClCompile Include="VKDX\VKDevice.cpp" />
+    <ClCompile Include="VKDX\VKDeviceMemory.cpp" />
+    <ClCompile Include="VKDX\VKDeviceObject.cpp" />
+    <ClCompile Include="VKDX\VKDispatchable.cpp" />
+    <ClCompile Include="VKDX\VKFence.cpp" />
+    <ClCompile Include="VKDX\VKFormat.cpp" />
+    <ClCompile Include="VKDX\VKFrameBuffer.cpp" />
+    <ClCompile Include="VKDX\VKImage.cpp" />
+    <ClCompile Include="VKDX\VKImageView.cpp" />
+    <ClCompile Include="VKDX\VKInstance.cpp" />
+    <ClCompile Include="VKDX\VKObject.cpp" />
+    <ClCompile Include="VKDX\VKPhysicalDevice.cpp" />
+    <ClCompile Include="VKDX\VKPipeline.cpp" />
+    <ClCompile Include="VKDX\VKPipelineCache.cpp" />
+    <ClCompile Include="VKDX\VKPipelineLayout.cpp" />
+    <ClCompile Include="VKDX\VKQueryPool.cpp" />
+    <ClCompile Include="VKDX\VKQueue.cpp" />
+    <ClCompile Include="VKDX\VKQueueFamily.cpp" />
+    <ClCompile Include="VKDX\VKRenderPass.cpp" />
+    <ClCompile Include="VKDX\VKRenderSubPass.cpp" />
+    <ClCompile Include="VKDX\VKResource.cpp" />
+    <ClCompile Include="VKDX\VKSampler.cpp" />
+    <ClCompile Include="VKDX\VKSemaphore.cpp" />
+    <ClCompile Include="VKDX\VKShaderModule.cpp" />
+    <ClCompile Include="VKDX\VKSurface.cpp" />
+    <ClCompile Include="VKDX\VKSwapChain.cpp" />
+    <ClCompile Include="VKDX\VKUtility.cpp" />
+    <ClCompile Include="VKDX\VulkanCore.cpp" />
+    <ClCompile Include="VKDX\VulkanKHR.cpp" />
+    <ClCompile Include="VKDX\VulkanWin32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DirectVK.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DirectVK.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
